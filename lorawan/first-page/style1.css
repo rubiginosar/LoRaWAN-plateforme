@@ -1,0 +1,95 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.error {
+  color: red;
+}
+
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: url(../img/Group2.jpg) ;
+  background-size: cover;
+}
+
+
+.box{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #ffffff62;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+  border: 4px #fff;
+  
+}
+.box .registration{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: block;
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.box form{
+  padding: 2rem;
+}
+.box header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .box form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border-radius: 6px;
+   outline: none;
+ }
+ /*.form input:focus{
+   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+ }*/
+.box form a{
+  font-size: 16px;
+  color: #009579;
+  text-decoration: none;
+}
+.box form a:hover{
+  text-decoration: underline;
+}
+.box form input.button{
+  color: #fff;
+  background: #009579;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}/*
+.box form input.button:hover{
+  background: #006653;
+}
+*/
